@@ -5,3 +5,6 @@
 下载unity之后，首先需要将layout布局设置为Tall,之后导入visual studio或者vscode
 <br>
 Edit -> Preference -> External Tools
+
+### Input按键属性配置
+Edit -> Project Settings -> Input Manager -> Axes
