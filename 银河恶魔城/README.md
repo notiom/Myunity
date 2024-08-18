@@ -19,3 +19,6 @@ Edit -> Project Settings -> Input Manager -> Axes
 1. 如果有一张图像是包含多个游戏角色的动作，可以点击图像使用Sprite Editor按钮中的Slice对其进行分割
 <br>
 2. 如果图像模糊，可以将精灵表中的Compression的选项卡改为None，并且将Fliter Mode改为Point，这样会使预想变得锐利
+
+### 使用子对象使游戏物体在正中心
+将Sprite Renderer组件添加在子物体中,其他例如colider,RigidBody等都添加在父物体中
