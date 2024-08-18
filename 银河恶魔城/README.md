@@ -41,4 +41,4 @@ Edit -> Project Settings -> Input Manager -> Axes
 将某值赋值给layermask后可以进行地面检测，将platform的层设置为Ground，其余设置为default
 
 ### Header语法
-[Header("Collision info")]; 可以在unity中给出提示信息
+[Header("Collision info")] 可以在unity中给出提示信息
