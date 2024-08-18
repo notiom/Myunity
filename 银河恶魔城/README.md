@@ -22,3 +22,14 @@ Edit -> Project Settings -> Input Manager -> Axes
 
 ### 使用子对象使游戏物体在正中心
 将Sprite Renderer组件添加在子物体中,其他例如colider,RigidBody等都添加在父物体中
+
+### Animition controller
+将该组件添加到游戏物体上，之后通过Animator的状态机来控制动画的播放
+### Animition
+该选项卡用于制作一个动作组，可以从刚才切割的精灵添加到animition中，会生成.anim文件,可以设置采样率控制动画播放的速度
+
+### Animator
+该选项卡用于控制状态机的播放，可以通过Animator的Parameters的选项卡来控制状态机间的切换
+
+### 动画之间的过渡时间问题解决
+点击动画机间过渡的那条线，取消Has Exit Time的勾选，并将Settings中的Transition Duratior设置为0
