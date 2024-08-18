@@ -45,3 +45,5 @@ Edit -> Project Settings -> Input Manager -> Axes
 
 ### 粘墙的问题解决
 使用create -> 2D -> physics materials 将材料赋值给地面和人物，并且将摩擦力改为0
+<br>
+其中，Friction为摩擦力，Bounciness为弹力
