@@ -36,3 +36,6 @@ Edit -> Project Settings -> Input Manager -> Axes
 
 ### visual studio的操作小tips
 按住alt + enter 可以提取方法，按住alt + up/down可以将某一行向下移
+
+### LayerMask
+将某值赋值给layermask后可以进行地面检测
