@@ -8,3 +8,9 @@ Edit -> Preference -> External Tools
 
 ### Input按键属性配置
 Edit -> Project Settings -> Input Manager -> Axes
+
+### [SerializeField]
+通常情况下，可以使用该字段使得成员变量私有化的同时将变量暴露给unity
+
+### GetComponent<>
+可以获得该游戏物体对象上的某一个组件
