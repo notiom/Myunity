@@ -14,3 +14,6 @@ Edit -> Project Settings -> Input Manager -> Axes
 
 ### GetComponent<>
 可以获得该游戏物体对象上的某一个组件
+
+### 精灵选择器
+如果有一张图像是包含多个游戏角色的动作，可以点击图像使用Sprite Editor按钮中的Slice对其进行分割
