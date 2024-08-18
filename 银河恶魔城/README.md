@@ -33,3 +33,6 @@ Edit -> Project Settings -> Input Manager -> Axes
 
 ### 动画之间的过渡时间问题解决
 点击动画机间过渡的那条线，取消Has Exit Time的勾选，并将Settings中的Transition Duratior设置为0
+
+### visual studio的操作小tips
+按住alt + enter 可以提取方法，按住alt + up/down可以将某一行向下移
