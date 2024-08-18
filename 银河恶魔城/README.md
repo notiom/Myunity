@@ -42,3 +42,6 @@ Edit -> Project Settings -> Input Manager -> Axes
 
 ### Header语法
 [Header("Collision info")] 可以在unity中给出提示信息
+
+### 粘墙的问题解决
+使用create -> 2D -> physics materials 将材料赋值给地面和人物，并且将摩擦力改为0
