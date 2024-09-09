@@ -57,5 +57,5 @@ Edit -> Project Settings -> Input Manager -> Axes
 3.OnDrawGizmos()
 
 ### 攻击动作事件触发器
-找到事件的最后一个精灵新建函数触发器，将状态机函数中改变状态
+找到事件的最后一个精灵，点击添加事件，新建函数触发器，将状态机函数中改变状态
 
