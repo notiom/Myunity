@@ -47,3 +47,13 @@ Edit -> Project Settings -> Input Manager -> Axes
 使用create -> 2D -> physics materials 将材料赋值给地面和人物，并且将摩擦力改为0
 <br>
 其中，Friction为摩擦力，Bounciness为弹力
+
+### 使用混合树创建JumpFall
+先分别制作两个的动画，之后将阈值设置为-1 - 1，当这个值变化的时候，就是混合树变化
+
+### 创建地面检查点
+1.Transform groundCheck
+2.float groundCheckDistance
+3.OnDrawGizmos()
+
+
