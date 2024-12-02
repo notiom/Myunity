@@ -25,6 +25,9 @@ public class UI_InGame : MonoBehaviour
 
 	private SkillManager skills;
 
+	private bool flaskCanCooldown;
+	private float currentFlaskItemCooldown;
+
 	[Header("Coins info")]
 	[SerializeField] private TextMeshProUGUI pricesText;
 
@@ -70,7 +73,13 @@ public class UI_InGame : MonoBehaviour
 		}
 
 		EquipmentData currentFlask = Inventory.instance.GetEquipment(EquipmentType.Flask);
-		if (Input.GetKeyDown(KeyCode.Alpha1) && currentFlask != null)
+		if (currentFlask != null)
+		{
+			flaskCanCooldown = true;
+			currentFlaskItemCooldown = currentFlask.itemCooldown;
+		}
+
+		if (Input.GetKeyDown(KeyCode.Alpha1) && flaskCanCooldown)
 		{
 			SetCooldownOf(flaskImage);
 		}
@@ -80,9 +89,10 @@ public class UI_InGame : MonoBehaviour
 		CheckCooldownof(crystalImage, skills.crystal.cooldown, crystalCooldown);
 		CheckCooldownof(swordImage, skills.sword.cooldown, swordCooldown);
 		CheckCooldownof(blackholeImage, skills.blackhole.cooldown, blackholeCooldown);
-		if (currentFlask != null)
+		if (flaskCanCooldown)
 		{
-			CheckCooldownof(flaskImage, currentFlask.itemCooldown, flaskCooldown);
+			CheckCooldownof(flaskImage, currentFlaskItemCooldown, flaskCooldown);
+			if (flaskImage.fillAmount <= 0) flaskCanCooldown = false;
 		}
 	}
 
@@ -112,6 +122,7 @@ public class UI_InGame : MonoBehaviour
 		else
 		{
 			_text.gameObject.SetActive(false);
+
 		}
 
 	}

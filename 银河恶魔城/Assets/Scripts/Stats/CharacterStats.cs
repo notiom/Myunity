@@ -308,7 +308,7 @@ public class CharacterStats : MonoBehaviour
 		DecreaseHealthBy(_damage);
 		GetComponent<Entity>().DamageEffect();
 
-		if (currentHealth <= 0)
+		if (currentHealth <= 0 && !isDead)
 		{
 			Die();
 		}

@@ -83,10 +83,9 @@ public class EnemyManager : MonoBehaviour
 		{
 			// 能到这里说明所有的怪物都死亡
 			// 触发胜利动画
-			GameObject.Find("Canvas").GetComponent<UI>().SwitchOnEndScreen(true);
+			StartCoroutine(DelayOnEndScreen(3f));
 			MapManager.instance.currentPassMap++;
 			MapManager.instance.UnlockMap();
-			PlayerManager.instance.rightBound = 0;
 			isFinished = true;
 			return;
 		}
@@ -109,7 +108,15 @@ public class EnemyManager : MonoBehaviour
 		}
 	}
 
-    private void GenerateEnemies()
+	private IEnumerator DelayOnEndScreen(float _seconds)
+	{
+		yield return new WaitForSeconds(_seconds);
+		GameObject.Find("Canvas").GetComponent<UI>().SwitchOnEndScreen(true);
+		Invoke("ChangeBound", .5f);
+	}
+
+	private void ChangeBound() => PlayerManager.instance.rightBound = 0;
+	private void GenerateEnemies()
     {
 
 		for (int i = 0;i < currentCheckEnemiesOfAmount[checkpointIndex];i++)

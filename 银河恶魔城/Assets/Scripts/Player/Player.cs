@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 // 121集
 public class Player : Entity
@@ -104,7 +105,11 @@ public class Player : Entity
 
 	protected override void Update()
 	{
-		transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+		// 避免直接被扎下去
+		float positionY = transform.position.y;
+		positionY = Mathf.Clamp(positionY, -1.82f, float.PositiveInfinity);
+		transform.position = new Vector3(transform.position.x, positionY, 0);
+
 		if (Time.timeScale == 0)
 			return;
 		base.Update();

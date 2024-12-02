@@ -283,11 +283,21 @@ public class Inventory : MonoBehaviour, ISaveManager
 		{
 			lastTimeUseFlask = Time.time;
 			currentFlask.Effect(null);
+			// 使用之后应该脱下并且溢出这个物品,但是为了让其更新,需要启动一个协程,但是脱下之后该物品不存在
+			Invoke("RemoveFlask", .2f);
 		}
 		else
 		{
 			Debug.Log("Flask on cooldown");
 		}
+	}
+
+	private void RemoveFlask()
+	{
+		EquipmentData currentFlask = GetEquipment(EquipmentType.Flask);
+		UnEquipItem(currentFlask);
+		// RemoveItem(currentFlask);
+		UpdateSlotUI();
 	}
 
 	public bool CanUseArmor()

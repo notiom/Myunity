@@ -90,6 +90,7 @@ public class Enemy_Slime : Enemy
 			GameObject newSlime = Instantiate(_slimePrefab, transform.position, Quaternion.identity);
 			newSlime.GetComponent<Enemy_Slime>().SetupSlime(facingDir);
 			newSlime.transform.parent = EnemyManager.instance.enemiesParent;
+
 			EnemyManager.instance.currentEnemies.Enqueue(0);
 		}
 	}

@@ -188,6 +188,6 @@ public class Entity : MonoBehaviour
 
 	public virtual void Die()
 	{
-		if (GetComponent<CharacterStats>().isDead) return;
+
 	}
 }

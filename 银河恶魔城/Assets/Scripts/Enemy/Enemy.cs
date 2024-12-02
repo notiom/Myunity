@@ -129,6 +129,7 @@ public class Enemy : Entity
 	public override void Die()
 	{
 		base.Die();
+
 		EnemyManager.instance.currentEnemies.Dequeue();
 	}
 
