@@ -62,3 +62,7 @@ Edit -> Project Settings -> Input Manager -> Axes
 ### 取消玩家间碰撞的方法
 edit -> project settings -> physics 2D -> layer collision matrix -> 取消物体之间collider的勾选框
 
+
+### 游戏玩法
+***
+
