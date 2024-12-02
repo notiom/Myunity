@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e107b367087134491a97459ede625a, type: 3}
+  m_Name: Thornmail
+  m_EditorClassIdentifier: 
+  itemType: 1
+  itemName: Blue wolf armor
+  icon: {fileID: 7587051932604259451, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
+  itemId: 2e464e4abd5f71941a18a84809d71c23
+  sellPrices: 100
+  equipmentType: 1
+  itemCooldown: 5
+  itemEffects:
+  - {fileID: 11400000, guid: 017f1b1a8409668429fe50bc65f56468, type: 2}
+  itemEffectDescription: 
+  strength: 4
+  agility: 0
+  intelligence: 0
+  vitality: 0
+  damage: 0
+  critChance: 0
+  critPower: 0
+  health: 50
+  armor: 15
+  magicResistance: 0
+  evasion: 15
+  fireDamage: 0
+  iceDamage: 0
+  lightingDamage: 0
+  craftingMaterials:
+  - data: {fileID: 11400000, guid: 566ced85006db7f4aadcd75042464072, type: 2}
+    stackSize: 3
