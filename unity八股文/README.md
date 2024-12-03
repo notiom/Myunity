@@ -30,7 +30,6 @@ static void Main(string[] args)
     Console.WriteLine(Father<Son1>.static_I);
     Console.WriteLine(Son1.static_I);
     Console.WriteLine(Son2.static_I);
-
 }
 ```
 以上代码运行结果应该是0 20 20 30
