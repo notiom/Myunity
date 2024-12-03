@@ -19,10 +19,10 @@ Entity<br>
 Entity一定有anim(动画师), rb(刚体组件), fx(特效), stats(数值状态), cd(碰撞器)<br>
 
 1.RestrictPosition() -> 限制player或者enemy的位置不能超出检查点<br>
-2.DamageEffect() -> 实体收到攻击后先闪烁再被击退
-3.SetupKnockbackDir() -> 设置一个击退方向,击退方向来自于攻击的反方向
-4.HitKnockback() -> 击退效果
-5.Flip() -> 翻转实体
-6.OnDrawGizmos() -> 画线,里面 DrawLine() -> 输入为(Vector3,Vector3) 两个位置 ,DrawWireSphere(Vector3,float) 一个位置,一个半径
+2.DamageEffect() -> 实体收到攻击后先闪烁再被击退<br>
+3.SetupKnockbackDir() -> 设置一个击退方向,击退方向来自于攻击的反方向<br>
+4.HitKnockback() -> 击退效果<br>
+5.Flip() -> 翻转实体<br>
+6.OnDrawGizmos() -> 画线,里面 DrawLine() -> 输入为(Vector3,Vector3) 两个位置 ,DrawWireSphere(Vector3,float) 一个位置,一个半径<br>
 
 
