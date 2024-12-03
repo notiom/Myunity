@@ -1,3 +1,4 @@
+<p align="left">
 # 代码整理心得
 
 构建该项目的代码设计思路为:<br>
@@ -24,4 +25,4 @@
 1.4.5 Flip() -> 翻转实体<br>
 1.4.6 OnDrawGizmos() -> 画线,里面 DrawLine() -> 输入为(Vector3,Vector3) 两个位置 ,DrawWireSphere(Vector3,float) 一个位置,一个半径<br>
 
-
+</p>
