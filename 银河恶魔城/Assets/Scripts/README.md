@@ -1,4 +1,4 @@
-<p align="left">
+<p align="right">
 # 代码整理心得
 
 构建该项目的代码设计思路为:<br>
