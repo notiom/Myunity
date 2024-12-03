@@ -24,12 +24,12 @@ public Son2 : Father<Son2>
 
 static void Main(string[] args)
 {
-  Son1.static_I = 20;
-  Son2.static_I = 30;
-  Console.WriteLine(Father<int>.static_I);
-  Console.WriteLine(Father<Son1>.static_I);
-  Console.WriteLine(Son1.static_I);
-  Console.WriteLine(Son2.static_I);
+    Son1.static_I = 20;
+    Son2.static_I = 30;
+    Console.WriteLine(Father<int>.static_I);
+    Console.WriteLine(Father<Son1>.static_I);
+    Console.WriteLine(Son1.static_I);
+    Console.WriteLine(Son2.static_I);
 
 }
 ```
