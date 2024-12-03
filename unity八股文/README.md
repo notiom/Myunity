@@ -32,4 +32,4 @@ static void Main(string[] args)
     Console.WriteLine(Son2.static_I);
 }
 ```
-以上代码运行结果应该是0 20 20 30
+以上代码运行结果应该是0 20 20 30,泛型变化会使父类类型变化
